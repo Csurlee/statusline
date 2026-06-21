@@ -27,7 +27,7 @@ Every field is something Claude Code or a free public API actually reports. Noth
 
 ## What it does **not** show, and why
 
-If you've seen other "AI statusline" projects with skill counts, hook counts, memory entry counts, or learning sparklines — those numbers only mean something if a hook system is logging every event to a database in the background. Bolting fake versions of those fields onto a script and showing zeros (or worse, hardcoded numbers) is decoration, not data. This project deliberately doesn't include them. If you want that, you're looking for a full framework (e.g. [PAI](https://github.com/danielmiessler/Personal_AI_Infrastructure)), which is a much bigger commitment than a statusline script.
+If you've seen other "AI statusline" projects with skill counts, hook counts, memory entry counts, or learning sparklines — those numbers only mean something if a hook system is logging every event to a database in the background. Bolting fake versions of those fields onto a script and showing zeros (or worse, hardcoded numbers) is decoration, not data. This project deliberately doesn't include them. 
 
 ## Requirements
 
@@ -57,11 +57,11 @@ sudo dnf install jq
 
 ### One-line install
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Csurlee/statusline/main/install.sh | bash
 ```
 Piping a remote script into `bash` runs whatever the server returns. If you'd rather inspect first:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/install.sh -o install.sh
+curl -fsSL https://raw.githubusercontent.com/Csurlee/statusline/main/install.sh -o install.sh
 less install.sh
 bash install.sh
 ```
@@ -69,7 +69,7 @@ bash install.sh
 ### Manual install
 ```bash
 mkdir -p ~/.claude
-curl -o ~/.claude/statusline.sh https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/statusline.sh
+curl -o ~/.claude/statusline.sh https://raw.githubusercontent.com/Csurlee/statusline/main/statusline.sh
 chmod +x ~/.claude/statusline.sh
 ```
 Then add this to `~/.claude/settings.json` (merge it in if the file already has other keys — don't overwrite):
@@ -99,7 +99,7 @@ export STATUSLINE_LON="9.13"
 ## Uninstall
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Csurlee/statusline/main/uninstall.sh | bash
 ```
 This only removes the `statusLine` key from `settings.json` and deletes `statusline.sh` — it does not touch anything else in `~/.claude`.
 
