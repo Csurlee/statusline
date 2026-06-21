@@ -126,6 +126,11 @@ This only removes the `statusLine` key from `settings.json` and deletes `statusl
 https://claude.site/public/artifacts/12ad11dd-e377-4bbf-8113-596c6d477eb0/embed
 ```
 
+## Acknowledgments
+
+Built for use with Claude Code CLI by Anthropic
+Made with ❤️ for the Claude Code community
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
