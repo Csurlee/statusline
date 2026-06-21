@@ -120,6 +120,12 @@ This only removes the `statusLine` key from `settings.json` and deletes `statusl
 - Network may be blocking outbound requests to `api.open-meteo.com`
 - Cached for 30 minutes — won't update faster than that by design
 
+## Artifact
+
+```
+https://claude.site/public/artifacts/12ad11dd-e377-4bbf-8113-596c6d477eb0/embed
+```
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
